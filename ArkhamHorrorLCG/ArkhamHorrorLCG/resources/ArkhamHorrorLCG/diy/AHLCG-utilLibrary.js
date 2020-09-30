@@ -647,9 +647,9 @@ function initBodyTags( diy, textBox ) {
 		let used = loadUsedValue( 'Encounter', entry[3] );
 
 		if ( used ) {				
-			textBox.setReplacementForTag( entry[2] + 's', '<image res://ArkhamHorrorLCG/icons/AHLCG-' + entry[0] + '.png 0.14in baseline>' );
-			textBox.setReplacementForTag( entry[2] + 'm', '<image res://ArkhamHorrorLCG/icons/AHLCG-' + entry[0] + '.png 0.35in baseline>' );
-			textBox.setReplacementForTag( entry[2] + 'l', '<image res://ArkhamHorrorLCG/icons/AHLCG-' + entry[0] + '.png 0.60in baseline>' );
+			textBox.setReplacementForTag( entry[2] + 's', '<image res://ArkhamHorrorLCG/icons/AHLCG-' + entry[0] + '.png 0.20in center>' );
+			textBox.setReplacementForTag( entry[2] + 'm', '<image res://ArkhamHorrorLCG/icons/AHLCG-' + entry[0] + '.png 0.35in center>' );
+			textBox.setReplacementForTag( entry[2] + 'l', '<image res://ArkhamHorrorLCG/icons/AHLCG-' + entry[0] + '.png 0.60in center>' );
 		}
 	}
 
@@ -662,9 +662,9 @@ function initBodyTags( diy, textBox ) {
 		let used = settings.getBoolean( 'AHLCG-UseUserEncounter' + index, true );
 		
 		if ( used ) {
-			textBox.setReplacementForTag( tag + 's', '<image "' + icon + '" 0.14in baseline>' );
-			textBox.setReplacementForTag( tag + 'm', '<image "' + icon + '" 0.35in baseline>' );
-			textBox.setReplacementForTag( tag + 'l', '<image "' + icon + '" 0.60in baseline>' );
+			textBox.setReplacementForTag( tag + 's', '<image "' + icon + '" 0.20in center>' );
+			textBox.setReplacementForTag( tag + 'm', '<image "' + icon + '" 0.35in center>' );
+			textBox.setReplacementForTag( tag + 'l', '<image "' + icon + '" 0.60in center>' );
 		}
 	} 
 
@@ -674,9 +674,9 @@ function initBodyTags( diy, textBox ) {
 		let used = loadUsedValue( 'Collection', index );
 
 		if (used) {				
-			textBox.setReplacementForTag( entry[1] + 's', '<image res://ArkhamHorrorLCG/icons/AHLCG-' + entry[0] + '.png 0.14in baseline>' );
-			textBox.setReplacementForTag( entry[1] + 'm', '<image res://ArkhamHorrorLCG/icons/AHLCG-' + entry[0] + '.png 0.35in baseline>' );
-			textBox.setReplacementForTag( entry[1] + 'l', '<image res://ArkhamHorrorLCG/icons/AHLCG-' + entry[0] + '.png 0.60in baseline>' );
+			textBox.setReplacementForTag( entry[1] + 's', '<image res://ArkhamHorrorLCG/icons/AHLCG-' + entry[0] + '.png 0.20in center>' );
+			textBox.setReplacementForTag( entry[1] + 'm', '<image res://ArkhamHorrorLCG/icons/AHLCG-' + entry[0] + '.png 0.35in center>' );
+			textBox.setReplacementForTag( entry[1] + 'l', '<image res://ArkhamHorrorLCG/icons/AHLCG-' + entry[0] + '.png 0.60in center>' );
 		}
 	}
 
@@ -688,16 +688,16 @@ function initBodyTags( diy, textBox ) {
 		let used = settings.getBoolean( 'AHLCG-UseUserCollection' + index, true );
 		
 		if ( used ) {
-			textBox.setReplacementForTag( tag + 's', '<image "' + icon + '" 0.14in baseline>' );
-			textBox.setReplacementForTag( tag + 'm', '<image "' + icon + '" 0.35in baseline>' );
-			textBox.setReplacementForTag( tag + 'l', '<image "' + icon + '" 0.60in baseline>' );
+			textBox.setReplacementForTag( tag + 's', '<image "' + icon + '" 0.20in center>' );
+			textBox.setReplacementForTag( tag + 'm', '<image "' + icon + '" 0.35in center>' );
+			textBox.setReplacementForTag( tag + 'l', '<image "' + icon + '" 0.60in center>' );
 		}
 	} 
 
 	for( let index = 0; index < AHLCGObject.locationIcons.length; index++ ){
 		let item = AHLCGObject.locationIcons[index];
 
-		textBox.setReplacementForTag( $('Loc'+item+'-tag'), '<image res://ArkhamHorrorLCG/icons/AHLCG-Loc' + item + '.png 0.14in center>' );
+		textBox.setReplacementForTag( $('Loc'+item+'-tag'), '<image res://ArkhamHorrorLCG/icons/AHLCG-Loc' + item + '.png 0.20in center>' );
 	}
 }
 
